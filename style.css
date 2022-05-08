@@ -1,0 +1,131 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-image: url("wall.jpg");
+}
+
+#clock{
+    border: 3px solid;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: relative;
+    font-size: 22px;
+    font-weight: bold;
+    filter: drop-shadow(0px 20px 6px gray);
+    background-color: #ffffff00;
+    outline: 4px solid #8e8787;
+}
+
+.number{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.num1{
+    transform: rotate(30deg);
+}
+
+.num2{
+    transform: rotate(60deg);
+}
+
+.num3{
+    transform: rotate(90deg);
+}
+
+.num4{
+    transform: rotate(120deg);
+}
+
+.num5{
+    transform: rotate(150deg);
+}
+
+.num6{
+    transform: rotate(180deg);
+}
+
+.num7{
+    transform: rotate(210deg);
+}
+
+.num8{
+    transform: rotate(240deg);
+}
+
+.num9{
+    transform: rotate(270deg);
+}
+
+.num10{
+    transform: rotate(300deg);
+}
+
+.num11{
+    transform: rotate(330deg);
+}
+
+.num12{
+    transform: rotate(0deg);
+}
+
+#circle{
+    position: absolute;
+    width: 15px;
+    border: 1px solid;
+    height: 15px;
+    border-radius: 50%;
+    background-color: black;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#min{
+    border: 1px solid;
+    position: absolute;
+    width: 5px;
+    height: 135px;
+    left: 49.5%;
+    top: 5%;
+    background-color: black;
+    transform: rotate(361deg);
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+
+#hora{
+    border: 1px solid;
+    position: absolute;
+    width: 8px;
+    height: 120px;
+    left: 49.5%;
+    top: 10%;
+    background-color: black;
+    transform: rotate(451deg);
+    transform-origin: bottom;
+    border-radius: 5px;
+}
+
+#sec{
+    position: absolute;
+    width: 2px;
+    height: 140px;
+    left: 49.5%;
+    top: 2%;
+    background-color: red;
+    transform: rotate(342deg);
+    transform-origin: bottom;
+    border-radius: 5px;
+    z-index: -1;
+}
